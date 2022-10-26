@@ -37,7 +37,9 @@ public class parte2 {
         return fus;
     }
     
+ 
     public static void main(String[] args) {
+        //el siguiente código toma un array de enteros, duplica cada elemento y retorna la suma del array
         int[] bob = make(5);
         dub(bob);
         System.out.println(mus(bob));

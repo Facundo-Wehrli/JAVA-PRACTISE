@@ -11,7 +11,9 @@ public class App {
         // ejemplo nombre + apellido + edad.
         // 4. Crear un método que imprima la lista final de usuarios ingresados.
 
-        
+    }
+    public void ingresarDatos(String nombre, String apellido, int edad){
         
     }
+    
 }
