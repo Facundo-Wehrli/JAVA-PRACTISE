@@ -19,25 +19,34 @@ public class triangle {
 
 
 
- 
-     public boolean isTriangle(int lado1, int lado2, int lado3){
-            
-    boolean no = false;
-    boolean si = true;
-            if((lado1+lado2) >lado3){
-                return no;
-            }
-            if((lado2+lado3) >lado1){
-                return no;
-            }
-            if((lado3+lado1) >lado2){
-                return no;
-            }
-            else{
-                return si;
-            }
-     }
-     triangle isTriangle = new triangle();
+  /**
+   * If any of the three lengths is greater than the sum of the other two, then you cannot form a
+   * triangle. 
+   * 
+   * Otherwise you can. 
+   * 
+   * The sum of the lengths of any two sides of a triangle is always greater than the length of the
+   * third side. 
+   * 
+   * This is also known as the triangle inequality
+   * 
+   * @param palo1 the length of the first side of the triangle
+   * @param palo2 3
+   * @param palo3 the length of the first side of the triangle
+   * @return The method is returning a boolean value.
+   */
+    public boolean isTriangle(int palo1, int palo2, int palo3) {
+        if (palo1 > (palo2 + palo3)) 
+            return false;
+        
+        if (palo2 > (palo1 + palo3)) 
+            return false;
+        
+        if (palo3 > (palo2 + palo1)) 
+            return false;
+        
+        return true;
 
-     
-  }
+    }
+
+}
