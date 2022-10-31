@@ -32,11 +32,10 @@ public class App {
  
     }
  
-    public static String[] mostrarDatos() {
+    public static void mostrarDatos() {
         for (int i = 0; i < basedeDatos.length; i++) {
             System.out.println(basedeDatos[i]);
         }
-        return basedeDatos;
     }
  
     public static void main(String[] args) throws Exception {
@@ -54,14 +53,12 @@ public class App {
             System.out.println("Ingrese su edad");
             edad = s.nextInt();
             alumnos(nombre, apellido, edad, i);
-
-            s.close();
-
             
         }
+ 
+        mostrarDatos();
+        s.close();
+
         
-      
-       mostrarDatos();
-          }
-  }
-  
+}
+}
