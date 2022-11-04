@@ -66,8 +66,8 @@ public class Apepe {
 
     public static void main(String[] args) {
         Apepe app = new Apepe();
-        System.out.println(app.imprimirDatos_MayoriaEdad());
-        app.UsuarioEnArray();
+        app.imprimirDatos_MayoriaEdad(); 
+        // app.UsuarioEnArray();
 
     }
 

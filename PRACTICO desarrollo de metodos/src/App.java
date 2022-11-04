@@ -25,15 +25,14 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        // int arrey[] = new int[10];
-        // App app = new App();
+        int arrey[] = new int[10];
+        App app = new App();
         // app.rellenar(arrey);
-        // app.mostrar(arrey);
+        app.mostrar(arrey);
 
         triangle triangulo = new triangle();
         System.out.println(triangulo.isTriangle(1, 2, 3));
 
-    }   
+    }
 
 }
-
