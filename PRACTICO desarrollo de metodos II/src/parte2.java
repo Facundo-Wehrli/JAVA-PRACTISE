@@ -21,11 +21,16 @@ public class parte2 {
         return a;
     }
 
+   /**
+    * The function takes an array of integers and doubles each element in the array
+    * 
+    * @param jub the array to be doubled
+    */
     public static void dub(int[] jub) {
         for (int i = 0; i < jub.length; i++) {
             jub[i] *= 2;
         }
-        //multiplica cada valor del array por 2  y va agregando a el array = 30
+        
     }
 
     public static int mus(int[] zoo) {
