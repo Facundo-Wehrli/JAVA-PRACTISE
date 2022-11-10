@@ -20,18 +20,18 @@ public class App {
 
     public void mostrar(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
-            System.out.println("posición: " + arreglo[i]);
+            System.out.println("posición: "+i +" tiene un =" + arreglo[i]);
         }
     }
 
     public static void main(String[] args) throws Exception {
         int arrey[] = new int[10];
         App app = new App();
-        // app.rellenar(arrey);
+        app.rellenar(arrey);
         app.mostrar(arrey);
 
-        triangle triangulo = new triangle();
-        System.out.println(triangulo.isTriangle(1, 2, 3));
+        // triangle triangulo = new triangle();
+        // System.out.println(triangulo.isTriangle(1, 2, 3));
 
     }
 
