@@ -17,36 +17,39 @@ public class triangle {
     // enunciados condicionales para escribir un
     // método de valor.
 
+    /**
+     * If any of the three lengths is greater than the sum of the other two, then
+     * you cannot form a
+     * triangle.
+     * 
+     * Otherwise you can.
+     * 
+     * The sum of the lengths of any two sides of a triangle is always greater than
+     * the length of the
+     * third side.
+     * 
+     * This is also known as the triangle inequality
+     * 
+     * @param palo1 the length of the first side of the triangle
+     * @param palo2 3
+     * @param palo3 the length of the first side of the triangle
+     * @return The method is returning a boolean value.
+     */
+    // public boolean isTriangle(int palo1, int palo2, int palo3) {
+    // if (palo1 > (palo2 + palo3))
+    // return false;
 
+    // if (palo2 > (palo1 + palo3))
+    // return false;
 
-  /**
-   * If any of the three lengths is greater than the sum of the other two, then you cannot form a
-   * triangle. 
-   * 
-   * Otherwise you can. 
-   * 
-   * The sum of the lengths of any two sides of a triangle is always greater than the length of the
-   * third side. 
-   * 
-   * This is also known as the triangle inequality
-   * 
-   * @param palo1 the length of the first side of the triangle
-   * @param palo2 3
-   * @param palo3 the length of the first side of the triangle
-   * @return The method is returning a boolean value.
-   */
-    public boolean isTriangle(int palo1, int palo2, int palo3) {
-        if (palo1 > (palo2 + palo3)) 
-            return false;
-        
-        if (palo2 > (palo1 + palo3)) 
-            return false;
-        
-        if (palo3 > (palo2 + palo1)) 
-            return false;
-        
-        return true;
+    // if (palo3 > (palo2 + palo1))
+    // return false;
 
+    // return true;
+
+    // }
+
+    public static boolean isTriangle(int palo1, int palo2, int palo3) {
+        return (palo1 > 0 && palo2 > 0 && palo3 > 0 && palo1 > palo2 +palo3 && palo2> palo1+ palo3 && palo3 > palo2 + palo1);
     }
-
 }
